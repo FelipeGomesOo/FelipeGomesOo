@@ -1,0 +1,21 @@
+/* CORES  */
+$primaria: #53565a; /* cinza  */
+$azul: #00c1da; 
+$verde: #00aa13; 
+$amarelo: #f6be00; 
+$rosa: #ce0058;  
+$fonte: 'poppins';
+
+.mg-0 {margin:0!important;}
+.pd-0 {padding:0!important;}
+.hide {display:none;}
+.block {display: block;}
+.inline-block {display: inline-block; }
+.text-center{text-align:center;}
+.relative {position: relative;}
+
+.sombra {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(95,95,95,0.19);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(95,95,95,0.19);
+  box-shadow: 0px 0px 10px 0px rgba(95,95,95,0.19);
+}

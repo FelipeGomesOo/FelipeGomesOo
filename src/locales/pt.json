@@ -1,0 +1,14 @@
+resources: {
+    'pt': {
+        translation: {
+            title: 'Oi! Me chamo Felipe e este é meu portfólio.',
+            subtitle: 'Aqui você encontra projetos de design, programação e desenvolvimento web.',
+        }
+    },
+    'en': {
+        translation: {
+            title: 'Hi! My name is Felipe and this is my portfolio.',
+            subtitle: 'Here you can find projects of design, programming and web development.',
+        }
+    }
+},
