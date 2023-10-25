@@ -1,0 +1,31 @@
+on: 
+  push:
+    branches: 
+    - master
+name: 🚀 Deploy website on push to master
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  
+
+    - name: Install Dependencies
+        run: npm install
+
+    - name: Build
+      run: npm run build
+      
+    - name: 📂 Deploy to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.MY_SITE_FTP_SERVER }}
+        username: ${{ secrets.MY_SITE_FTP_USERNAME }}
+        password: ${{ secrets.MY_SITE_FTP_PASS }}
+        local-dir: ./build
