@@ -7,7 +7,7 @@ export default function ProjectPage(){
     const projectsData =  t('projects.data', { returnObjects: true });
     
     const {projectName} = useParams();
-    const project = projectsData.find(proj => proj.name === projectName);
+    const project = projectsData.find(proj => proj.visible && proj.name === projectName);
 
     const nextProject = projectsData[projectsData.indexOf(project) === projectsData.length - 1 ? 0 : projectsData.indexOf(project) + 1];
 

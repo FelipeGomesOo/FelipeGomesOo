@@ -3,6 +3,7 @@ import imgs from '../assets/images';
 const projectsData = [
     {  
         name: 'primavera-dos-paes',
+        visible: false,
         client: {
             name: 'Primavera dos Pães',
             site: 'http://www.primaveradospaes.com.br/',
@@ -97,6 +98,7 @@ const projectsData = [
     }, 
     {  
         name: 'ficou-pequeno',
+        visible: true,
         client: {
             name: 'Ficou Pequeno',
             site: 'http://www.ficoupequeno.com/',
@@ -280,6 +282,7 @@ const projectsData = [
     },
     {
         name: 'oro',
+        visible: true,
         client: {
             name: 'Oro Restaurante',
             site: 'http://ororestaurante.com.br/',
@@ -321,6 +324,7 @@ const projectsData = [
     },
     {
         name: 'ecobras',
+        visible: true,
         client: {
             name: 'Ecobras',
             site: 'http://www.ecobras.com.br/',
@@ -359,6 +363,7 @@ const projectsData = [
     },
     {
         name: '4a',
+        visible: true,
         client: {
             name: '4a',
             site: 'http://www.4a.pt/',
@@ -446,6 +451,7 @@ const projectsData = [
     },
     {
         name: 'simacontabil',
+        visible: true,
         client: {
             name: 'Sima Contábil',
             site: 'https://www.simacontabil.com.br/',
@@ -484,6 +490,7 @@ const projectsData = [
     },
     {
         name: 'bpa',
+        visible: true,
         client: {
             name: 'Boureau Przewodowski Advocacia',
             site: 'https://bpadvocacia.adv.br/',
@@ -618,6 +625,7 @@ const projectsData = [
     },
     {
         name: 'v2v',
+        visible: true,
         client: {
             name: 'V2V',
             site: 'https://www.v2v.net/',
@@ -665,6 +673,7 @@ const projectsData = [
     },
     {
         name: 'anamel',
+        visible: true,
         client: {
             name: 'Anamel Castro',
             site: 'http://www.anamelcastro.com.br/',
@@ -759,6 +768,7 @@ const projectsData = [
     },
     {
         name: 'amoras',
+        visible: true,
         client: {
             name: 'Pousada das Amoras',
             site: 'http://www.amorasbuzios.com.br/',

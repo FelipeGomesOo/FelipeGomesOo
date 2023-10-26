@@ -10,22 +10,24 @@ export default function Projects() {
       <div className="os-projetos">
         <div className="row">    
           {
-            projectsData.map((proj, index) => {
-            return (        
-              <div key={index} className="small-12 medium-6 large-4 columns">
-                <Link className="block" to={`/projects/${proj.name}`}>
-                  <img src={proj.info.thumb} alt={proj.client.name} />
-                  <div className="overlay">
-                    <div className="inner">
-                      <div className="nome-do-projeto">
-                        <h3>{proj.client.name}</h3>
-                        <h4 className="mg-0">{proj.info.tagline}</h4>
+            projectsData.map((proj, index) => {              
+              return ( 
+                proj.visible &&        
+                <div key={index} className="small-12 medium-6 large-4 columns">
+                  <Link className="block" to={`/projects/${proj.name}`}>
+                    <img src={proj.info.thumb} alt={proj.client.name} />
+                    <div className="overlay">
+                      <div className="inner">
+                        <div className="nome-do-projeto">
+                          <h3>{proj.client.name}</h3>
+                          <h4 className="mg-0">{proj.info.tagline}</h4>
+                        </div>
                       </div>
-                    </div>
-                    </div>
-                </Link>
-              </div>
-            );})
+                      </div>
+                  </Link>
+                </div>
+              );
+            })
           }
      </div>
   </div>
