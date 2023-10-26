@@ -14,7 +14,7 @@ const projectsData = [
             shortDescription: 'Marca para a Primavera dos Pães',
             description: 'A Primavera dos Pães é uma padaria artesanal que produz pães de fermentação natural, brioches e biscoitos com ingredientes orgânicos e nacionais',
             services:['UI Design','Front-end'],
-            services:['Branding','Papelaria','Sinalização'],
+            tools:['Branding','Papelaria','Sinalização'],
             thumb: imgs.thumb_primavera_dos_paes,
             mainImage: imgs.main_primavera_dos_paes            
         },

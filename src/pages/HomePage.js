@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function HomePage(){
     const currentYear = new Date().getFullYear();  
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return(
         <div className="HomePage">
             <section className="hero">
@@ -28,17 +28,17 @@ export default function HomePage(){
                             <div className="small-12 medium-6 large-12 columns">
                                 <h4>{t('about.xp.title')}</h4>
                                 <ul>
-                                    <li>2020 . 2023 - <a className='inline_link' target="_blank" href="http://www.arajarapark.com.br/">Arajara Park</a> - {t('about.xp.pos.01')}</li>
-                                    <li>2013 . 2017 - <a className='inline_link' target="_blank" href="http://www.pedesonhos.com.br/">Pé de Sonhos</a> - {t('about.xp.pos.02')}</li>
-                                    <li>2011 . 2011 - <a className='inline_link' target="_blank" href="http://www.piloti.com.br/">Piloti Mobile & Internet</a> - {t('about.xp.pos.03')}</li>                                    
+                                    <li>2020 . 2023 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.arajarapark.com.br/">Arajara Park</a> - {t('about.xp.pos.01')}</li>
+                                    <li>2013 . 2017 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.pedesonhos.com.br/">Pé de Sonhos</a> - {t('about.xp.pos.02')}</li>
+                                    <li>2011 . 2011 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.piloti.com.br/">Piloti Mobile & Internet</a> - {t('about.xp.pos.03')}</li>                                    
                                 </ul>
                             </div>
                             <div className="small-12 medium-6 large-12   columns">
                                 <h4>{t('about.acad.title')}</h4>
                                 <ul>  
-                                    <li>2021 - {t('about.acad.course.01')} - <a className='inline_link' target="_blank" href="https://www.espm.br/">ESPM</a></li>
-                                    <li>2016 - {t('about.acad.course.02')} - <a className='inline_link' target="_blank" href="https://drive.google.com/file/d/1tcpddJqf4eTDqPeG7uyJCb_rnxr_BmkH/view">General Assembly</a></li>
-                                    <li>2013 - {t('about.acad.course.03')} - <a className='inline_link' target="_blank" href="https://www.anglia.ac.uk/study/undergraduate/graphic-design">Anglia Ruskin University</a></li>
+                                    <li>2021 - {t('about.acad.course.01')} - <a className='inline_link' target="_blank" rel="noreferrer" href="https://www.espm.br/">ESPM</a></li>
+                                    <li>2016 - {t('about.acad.course.02')} - <a className='inline_link' target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1tcpddJqf4eTDqPeG7uyJCb_rnxr_BmkH/view">General Assembly</a></li>
+                                    <li>2013 - {t('about.acad.course.03')} - <a className='inline_link' target="_blank" rel="noreferrer" href="https://www.anglia.ac.uk/study/undergraduate/graphic-design">Anglia Ruskin University</a></li>
                                  </ul>
                             </div>
                         </div>
@@ -61,10 +61,10 @@ export default function HomePage(){
                         <div className="row">
                             <div className="small-12 columns">
                                 <h4>{t('contact.see_also')}</h4>                              
-                                    <a className="behance inline_link" target="_blank" href="https://www.behance.net/FelipeGomesO_o" >
+                                    <a className="behance inline_link" target="_blank" rel="noreferrer" href="https://www.behance.net/FelipeGomesO_o" >
                                         <span>Behance</span>
                                     </a>&nbsp;&nbsp;&nbsp;
-                                    <a className="linkedin inline_link" target="_blank" href="https://www.linkedin.com/in/felipegomesoliveira/" >
+                                    <a className="linkedin inline_link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/felipegomesoliveira/" >
                                         <span>Linkedin</span>
                                     </a>                           
                             </div>

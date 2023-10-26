@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {useParams} from 'react-router-dom';  
 import { useTranslation } from 'react-i18next'; 
 export default function ProjectPage(){
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const projectsData =  t('projects.data', { returnObjects: true });
     
     const {projectName} = useParams();
@@ -49,7 +49,7 @@ export default function ProjectPage(){
                             <div className="row">
                                 <div className="small-12 medium-6 columns">
                                     <h4>{t('projectPage.client')}</h4>
-                                    <p><a className='inline_link' target="_blank" href={project.client.site}>{project.client.name}</a></p>
+                                    <p><a className='inline_link' target="_blank" rel="noreferrer" href={project.client.site}>{project.client.name}</a></p>
                                 </div>
                                 <div className="small-12 medium-6 columns">
                                     <h4>{t('projectPage.services')}</h4>
@@ -74,7 +74,7 @@ export default function ProjectPage(){
                                 {  project.info.hasOwnProperty('direction') && 
                                     <div className="small-12 medium-6 columns">
                                         <h4>{t('projectPage.supervision')}</h4>
-                                        <p>{project.info.direction.name} da <a  className='inline_link' target="_blank" href={project.info.direction.url}>{project.info.direction.company}</a></p>
+                                        <p>{project.info.direction.name} da <a  className='inline_link' target="_blank" rel="noreferrer" href={project.info.direction.url}>{project.info.direction.company}</a></p>
                                     </div> 
                                 }
                             </div>                             
