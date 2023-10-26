@@ -1,5 +1,3 @@
-import React from "react"; 
-
 import logo from './logotipo-felipe-gomes.svg';
 import whatsapp from './whatsapp.svg';
 import whatsappBranco from './whatsapp-branco.svg';
@@ -144,7 +142,7 @@ import gallery_amoras_06 from './project-galleries/amoras/06.jpg';
 import gallery_amoras_07 from './project-galleries/amoras/07.jpg';
 
 
-export default {
+const images = {
     logo,
     whatsapp,
     seta_baixo,
@@ -206,8 +204,7 @@ export default {
     gallery_4a_02,
     gallery_4a_03,
     gallery_4a_04,
-    gallery_4a_05,
-    gallery_4a_06,
+    gallery_4a_05, 
     gallery_4a_06,
     gallery_4a_07,
     gallery_4a_08,
@@ -275,3 +272,5 @@ export default {
     gallery_amoras_07,    
     
 };
+
+export default images;
