@@ -25,8 +25,7 @@ export default function NavBar(){
                         <a href="/#" onClick={(e) => {e.preventDefault() ; changeLanguage('pt')}}>PT</a>
                         <a href="/#" onClick={(e) => {e.preventDefault() ; changeLanguage('en')}}>EN</a>
                     </li>
-                </ul>
-                <div className="hide-for-large"></div>
+                </ul>                
             </nav>
         </div>
     </header>
