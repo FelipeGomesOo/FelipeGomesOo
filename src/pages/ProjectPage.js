@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';   
 import {useParams, Navigate} from 'react-router-dom';  
 import { useTranslation } from 'react-i18next'; 
+import { Helmet } from 'react-helmet';
 export default function ProjectPage(){
     const { t } = useTranslation();
     const projectsData =  t('projects.data', { returnObjects: true }).filter(objeto => objeto.visible === true);
@@ -24,6 +25,10 @@ export default function ProjectPage(){
     
     return(  
         <div className="ProjectsPage">
+            <Helmet>
+                <title>{`${project.client.name} | Felipe Gomes`}</title>
+                <meta name="description" content={project.info.description} /> 
+            </Helmet>
             <ScrollToTopOnMount />                 
             <section className="hero">
                 <div className="row">                    

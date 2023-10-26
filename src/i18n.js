@@ -14,10 +14,16 @@ i18n
     resources: {
         'pt': {
             translation: {
-                hero: {                
-                    title: 'Oi. Me chamo Felipe.',
-                    subtitle: 'Eu sou designer e desenvolvedor front-end.',
-                },
+                homePage: {
+                    metaData: {
+                        title: 'Felipe Gomes | Designer e Desenvolvedor Front-end',
+                        description: 'Eu sou Felipe e trabalho com criação de marcas, design de interfaces digitais e programação front-end. Aqui você também encontra projetos de UX, sinalização e papelaria.',
+                    },
+                    hero: {                
+                        title: 'Oi. Me chamo Felipe.',
+                        subtitle: 'Eu sou designer e desenvolvedor front-end.',
+                    }                    
+                },                
                 projects:{
                     title: 'Projetos',
                     data: projectsDataPT,
@@ -65,10 +71,16 @@ i18n
         },
         'en': {
             translation: {
-                hero: {  
-                    title: "Hello. I'm Felipe.",
-                    subtitle: "I'm a brazilian interdisciplinary designer & front-end developer.",
-                },
+                homePage: {
+                    metaData: {
+                        title: 'Felipe Gomes | Front-end designer & front-end developer',
+                        description: "Hello, I'm Felipe, and I specialize in brand creation, digital interface design, and front-end programming. In my portfolio, you'll discover a diverse range of projects, including UX design, signage, and stationery design.",
+                    },
+                    hero: {  
+                        title: "Hello. I'm Felipe.",
+                        subtitle: "I'm a brazilian interdisciplinary designer & front-end developer.",
+                    }
+                },               
                 projects:{
                     title: 'Work',
                     data: projectsDataEN,

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -15,8 +15,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
 </>
 ));
 
-export default function App() {
-  
+export default function App() { 
   return (
     <>      
       <RouterProvider router={appRouter}  />

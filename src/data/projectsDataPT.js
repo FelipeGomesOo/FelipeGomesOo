@@ -1,7 +1,7 @@
 import imgs from '../assets/images';
 
 const projectsData = [
-    {  
+    {         
         name: 'primavera-dos-paes',
         visible: false,
         client: {

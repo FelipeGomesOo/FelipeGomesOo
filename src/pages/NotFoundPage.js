@@ -1,11 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';  
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom'; 
+import { Helmet } from 'react-helmet'; 
 
 export default function NotFoundPage(){ 
     const { t } = useTranslation();
     return( 
         <div className="NotFoundPage">
+            <Helmet>
+                <title>{t('notFoundPage.title')}</title>
+                <meta name="description" content={t('notFoundPage.description')} />
+            </Helmet>
             <section className="hero">
                 <div className="row">
                     <div className="small-12 columns">

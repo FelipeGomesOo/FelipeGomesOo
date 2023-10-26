@@ -2,6 +2,7 @@ import React from 'react';
 import Projects from '../components/Projects';
 import imgs from '../assets/images';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet'; 
  
 
 export default function HomePage(){
@@ -9,10 +10,14 @@ export default function HomePage(){
     const { t } = useTranslation();
     return(
         <div className="HomePage">
+            <Helmet>
+                <title>{t('homePage.metaData.title')}</title>
+                <meta name="description" content={t('homePage.metaData.description')} />
+            </Helmet>
             <section className="hero">
                 <div className="row">
                     <div className="small-12 columns">
-                        <h1>{t('hero.title')} <span>{t('hero.subtitle')}</span></h1>
+                        <h1>{t('homePage.hero.title')} <span>{t('homePage.hero.subtitle')}</span></h1>
                     </div> 
                 </div>
             </section>             

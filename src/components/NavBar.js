@@ -20,9 +20,11 @@ export default function NavBar(){
                 <ul className="show-for-large">
                     <li><a href="/#projetos">{t('projects.title')}</a></li>
                     <li><a href="/#sobre">{t('about.title')}</a></li>
-                    <li><a href="/#contatos">{t('contact.title')}</a></li>
-                    <button type="button" onClick={() => changeLanguage('pt')}>PT</button>
-                    <button type="button" onClick={() => changeLanguage('en')}>EN</button>
+                    <li><a href="/#contatos">{t('contact.title')}</a></li> 
+                    <li className='language_select'> 
+                        <a href="/#" onClick={(e) => {e.preventDefault() ; changeLanguage('pt')}}>PT</a>
+                        <a href="/#" onClick={(e) => {e.preventDefault() ; changeLanguage('en')}}>EN</a>
+                    </li>
                 </ul>
                 <div className="hide-for-large"></div>
             </nav>
