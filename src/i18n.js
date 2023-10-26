@@ -55,6 +55,11 @@ i18n
                     location: 'Localização',
                     resources: 'Ferramentas',
                     supervision: 'Direção'
+                },
+                notFoundPage: {
+                    title: 'Pagina não encontrada',
+                    description: 'Desculpe, a página que você está tentando acessar não existe.',
+                    see_also: 'Retornar para página inicial'
                 }
             }
         },
@@ -101,6 +106,11 @@ i18n
                     location: 'Location',
                     resources: 'Resources',
                     supervision: 'Supervision'
+                },                
+                notFoundPage: {
+                    title: 'Page not found',
+                    description: 'Sorry, the page you are looking for does not exist.',
+                    see_also: 'Return to homepage'
                 }
             }
         }

@@ -1,13 +1,17 @@
 import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';   
-import {useParams} from 'react-router-dom';  
+import {useParams, Navigate} from 'react-router-dom';  
 import { useTranslation } from 'react-i18next'; 
 export default function ProjectPage(){
     const { t } = useTranslation();
-    const projectsData =  t('projects.data', { returnObjects: true });
+    const projectsData =  t('projects.data', { returnObjects: true }).filter(objeto => objeto.visible === true);
     
     const {projectName} = useParams();
-    const project = projectsData.find(proj => proj.visible && proj.name === projectName);
+    const project = projectsData.find(proj => proj.name === projectName);
+
+    if (!project) {
+        return <Navigate to="/404" />
+    } 
 
     const nextProject = projectsData[projectsData.indexOf(project) === projectsData.length - 1 ? 0 : projectsData.indexOf(project) + 1];
 
@@ -17,7 +21,8 @@ export default function ProjectPage(){
         }, []);      
         return null;
       }
-    return(
+    
+    return(  
         <div className="ProjectsPage">
             <ScrollToTopOnMount />                 
             <section className="hero">
