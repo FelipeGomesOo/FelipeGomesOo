@@ -2,6 +2,7 @@ import logo from './logotipo-felipe-gomes.svg';
 import whatsapp from './whatsapp.svg';
 import whatsappBranco from './whatsapp-branco.svg';
 import seta_baixo from './seta-baixo.svg';
+import menuIcon from './menuIcon.svg';
 
 // Project thumbnails
 import thumb_primavera_dos_paes  from './project-thumbs/primavera_dos_paes.jpg';
@@ -147,6 +148,7 @@ const images = {
     whatsapp,
     seta_baixo,
     whatsappBranco,
+    menuIcon,
 
     thumb_primavera_dos_paes,
     main_primavera_dos_paes,

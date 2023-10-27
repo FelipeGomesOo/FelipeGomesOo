@@ -2,12 +2,10 @@ import React from 'react';
 import imgs from '../assets/images';
 import {Link} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-
+import ChangeLanguage from './ChangeLanguage';
 export default function NavBar(){
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-    };
+    const { t  } = useTranslation();
+    
     return(
     <header>
         <div className="row">
@@ -21,10 +19,7 @@ export default function NavBar(){
                     <li><a href="/#projetos">{t('projects.title')}</a></li>
                     <li><a href="/#sobre">{t('about.title')}</a></li>
                     <li><a href="/#contatos">{t('contact.title')}</a></li> 
-                    <li className='language_select'> 
-                        <a href="/#" onClick={(e) => {e.preventDefault() ; changeLanguage('pt')}}>PT</a>
-                        <a href="/#" onClick={(e) => {e.preventDefault() ; changeLanguage('en')}}>EN</a>
-                    </li>
+                    <li><ChangeLanguage /></li>
                 </ul>                
             </nav>
         </div>

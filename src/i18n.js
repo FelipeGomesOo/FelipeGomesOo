@@ -20,7 +20,7 @@ i18n
                         description: 'Eu sou Felipe e trabalho com criação de marcas, design de interfaces digitais e programação front-end. Aqui você também encontra projetos de UX, sinalização e papelaria.',
                     },
                     hero: {                
-                        title: 'Oi. Me chamo Felipe.',
+                        title: 'Oi! Me chamo Felipe.',
                         subtitle: 'Eu sou designer e desenvolvedor front-end.',
                     }                    
                 },                

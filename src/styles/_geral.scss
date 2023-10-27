@@ -7,19 +7,22 @@ header  {
 } 
 
 /* MENU */
-nav {
-  text-align: right;
-  li {
-    display: inline-block;
-    a {
-      padding: 0 0 0 2rem;
-      opacity: 0.6;
-    }
-    a:hover {
-      opacity: 1;
-    }
+header {
+  nav {
+    text-align: right;
+    li {
+      display: inline-block;
+      a {
+        padding: 0 0 0 2rem;
+        opacity: 0.6;
+      }
+      a:hover,.active {
+        opacity: 1;
+      }
+    } 
   }
 }
+
 /* Home */
 .os-projetos { 
   a { 

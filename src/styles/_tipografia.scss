@@ -33,6 +33,11 @@ p, ul, dl, ol {
   font-size: 1rem;
   margin:  0 0 1rem 0;
 }
+li ul {
+  margin-bottom: 0;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
 p a {
   display: inline;
 }  
