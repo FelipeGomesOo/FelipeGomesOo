@@ -4,6 +4,10 @@ import ProjectPage from './pages/ProjectPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Root from './components/Root.js';
 import {RouterProvider, createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'; 
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('413591917');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
 <>
