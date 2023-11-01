@@ -71,7 +71,10 @@ export default function HomePage(){
                                     </a>&nbsp;&nbsp;&nbsp;
                                     <a className="linkedin inline_link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/felipegomesoliveira/" >
                                         <span>Linkedin</span>
-                                    </a>                           
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a className="github inline_link" target="_blank" rel="noreferrer" href="https://github.com/FelipeGomesOo" >
+                                        <span>Github</span>
+                                    </a>                            
                             </div>
                         </div>
                     </div>
