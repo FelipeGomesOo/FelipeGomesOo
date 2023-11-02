@@ -1,4 +1,4 @@
-import logo from './logotipo-felipe-gomes.svg';
+import logo from './logotipo-felipe-2023.svg';
 import whatsapp from './whatsapp.svg';
 import whatsappBranco from './whatsapp-branco.svg';
 import seta_baixo from './seta-baixo.svg';
