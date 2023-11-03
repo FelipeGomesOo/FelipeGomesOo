@@ -33,9 +33,11 @@ export default function HomePage(){
                             <div className="small-12 medium-6 large-12 columns">
                                 <h4>{t('about.xp.title')}</h4>
                                 <ul>
-                                    <li>2020 . 2023 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.arajarapark.com.br/">Arajara Park</a> - {t('about.xp.pos.01')}</li>
-                                    <li>2013 . 2017 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.pedesonhos.com.br/">Pé de Sonhos</a> - {t('about.xp.pos.02')}</li>
-                                    <li>2011 . 2011 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.piloti.com.br/">Piloti Mobile & Internet</a> - {t('about.xp.pos.03')}</li>                                    
+                                    <li>2020 . 2023 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.arajarapark.com.br/">Arajara Park</a> - {t('about.xp.pos.arajara')}</li>
+                                    <li>2019 . 2020 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.oowlish.com/">Oowlish</a> - {t('about.xp.pos.oowlish')}</li>
+                                    <li>2013 . 2017 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.pedesonhos.com.br/">Pé de Sonhos</a> - {t('about.xp.pos.pds')}</li>
+                                    <li>2013 . 2013 - <a className='inline_link' target="_blank" rel="noreferrer" href="https://dribbble.com/onespacemedia/">Onespacemedia</a> - {t('about.xp.pos.onespacemedia')}</li>
+                                    <li>2011 . 2011 - <a className='inline_link' target="_blank" rel="noreferrer" href="http://www.piloti.com.br/">Piloti Mobile & Internet</a> - {t('about.xp.pos.piloti')}</li>                                    
                                 </ul>
                             </div>
                             <div className="small-12 medium-6 large-12   columns">

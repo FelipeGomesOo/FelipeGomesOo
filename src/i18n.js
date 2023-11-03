@@ -35,9 +35,11 @@ i18n
                     xp:{
                         title: 'Experiência',
                         pos: {
-                            '01':'Gerente de Marketing',
-                            '02':'Designer Júnior',
-                            '03':'Designer' 
+                            'arajara':'Gerente de Marketing',
+                            'oowlish':'Frontend Designer',
+                            'pds':'Designer Júnior',
+                            'piloti':'Designer',
+                            'onespacemedia':'Designer' 
                         }
                     },
                     acad:{
@@ -92,9 +94,11 @@ i18n
                     xp:{
                         title: 'Experience',
                         pos: {
-                            '01':'Marketing Manager',
-                            '02':'Junior Designer',
-                            '03':'Designer' 
+                            'arajara':'Gerente de Marketing',
+                            'oowlish':'Frontend Designer',
+                            'pds':'Designer Júnior',
+                            'piloti':'Designer',
+                            'onespacemedia':'Designer'  
                         }
                     },
                     acad:{
