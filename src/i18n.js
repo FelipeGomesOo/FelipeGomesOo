@@ -62,7 +62,9 @@ i18n
                     industry: 'Setor',
                     location: 'Localização',
                     resources: 'Ferramentas',
-                    supervision: 'Direção'
+                    supervision: 'Direção',
+                    liveButon: 'Confira o site',
+                    githubButon: 'Repositório'
                 },
                 notFoundPage: {
                     title: 'Pagina não encontrada',
@@ -121,7 +123,9 @@ i18n
                     industry: 'Industry',
                     location: 'Location',
                     resources: 'Resources',
-                    supervision: 'Supervision'
+                    supervision: 'Supervision',
+                    liveButon: 'Live version',
+                    githubButon: 'Github repo'
                 },                
                 notFoundPage: {
                     title: 'Page not found',

@@ -5,6 +5,8 @@ import seta_baixo from './seta-baixo.svg';
 import menuIcon from './menuIcon.svg';
 
 // Project thumbnails
+import thumb_jamming  from './project-thumbs/jamming.jpg';
+import thumb_findMyHat  from './project-thumbs/find-my-hat.jpg';
 import thumb_primavera_dos_paes  from './project-thumbs/primavera_dos_paes.jpg';
 import thumb_ficou_pequeno_mobile from './project-thumbs/ficou_pequeno_mobile.jpg'; 
 import thumb_oro  from './project-thumbs/oro.jpg'; 
@@ -17,6 +19,20 @@ import thumb_anamel  from './project-thumbs/ana.jpg';
 import thumb_amoras  from './project-thumbs/amoras.jpg';  
 
 // Projects images
+
+// Jamming
+import main_jamming  from './project-main-img/jamming.jpg';
+import gallery_jamming_flow_pt_hor  from './project-galleries/jamming/flow-pt-hor.svg';
+import gallery_jamming_flow_en_hor  from './project-galleries/jamming/flow-en-hor.svg';
+import gallery_jamming_flow_pt_ver  from './project-galleries/jamming/flow-pt-ver.svg';
+import gallery_jamming_01 from './project-galleries/jamming/01.jpg';
+import gallery_jamming_02 from './project-galleries/jamming/02.jpg';
+import gallery_jamming_03 from './project-galleries/jamming/03.jpg';
+import gallery_jamming_04 from './project-galleries/jamming/04.jpg';
+import gallery_jamming_05 from './project-galleries/jamming/05.jpg';
+
+// Find my Hat
+import main_findMyHat  from './project-main-img/find-my-hat.jpg';
 
 // primavera_dos_paes
 import main_primavera_dos_paes  from './project-main-img/primavera_dos_paes.jpg';
@@ -149,6 +165,20 @@ const images = {
     seta_baixo,
     whatsappBranco,
     menuIcon,
+
+    main_jamming,
+    thumb_jamming,
+    gallery_jamming_flow_pt_hor,
+    gallery_jamming_flow_en_hor,
+    gallery_jamming_flow_pt_ver,
+    gallery_jamming_01,
+    gallery_jamming_02,
+    gallery_jamming_03,
+    gallery_jamming_04,
+    gallery_jamming_05,
+
+    main_findMyHat,
+    thumb_findMyHat,
 
     thumb_primavera_dos_paes,
     main_primavera_dos_paes,

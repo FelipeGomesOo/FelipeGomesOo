@@ -36,7 +36,13 @@ export default function ProjectPage(){
                         <div className="dados">                                
                             <h4>{project.info.tagline}</h4>
                             <h1>{project.client.name}</h1>                                    
-                            <h3>{project.info.shortDescription}</h3>    
+                            <h3>{project.info.shortDescription}</h3>
+                            { project.info.hasOwnProperty('live') && 
+                             <Link rel='noopener noreferrer' target='_blank' alt={t('projectPage.liveButon')} className='inline_link' to={`${project.info.live}`}>{t('projectPage.liveButon')}</Link>
+                            }
+                            { project.info.hasOwnProperty('githubRepo') && 
+                              <Link rel='noopener noreferrer' target='_blank' alt={t('projectPage.githubButon')} className='inline_link' to={`${project.info.githubRepo}`}>{t('projectPage.githubButon')}</Link>    
+                            }
                         </div>                        
                     </div>
                     <div className="small-12 large-8 columns">
@@ -49,7 +55,7 @@ export default function ProjectPage(){
                     <div className="small-12 columns">
                         <h2>{t('projectPage.title')}</h2>
                     </div>
-                </div>
+                </div>  
                 <article>
                     <div className="row">
                         <div className="small-12 medium-12 large-6 columns">
@@ -71,10 +77,12 @@ export default function ProjectPage(){
                                     <h4>{t('projectPage.industry')}</h4>
                                     <p>{project.client.sector}</p>
                                 </div>
-                                <div className="small-12 medium-6 columns">
-                                    <h4>{t('projectPage.location')}</h4>
-                                    <p>{project.client.location}</p>
-                                </div>
+                                { project.client.hasOwnProperty('location') &&
+                                    <div className="small-12 medium-6 columns">
+                                        <h4>{t('projectPage.location')}</h4>
+                                        <p>{project.client.location}</p>
+                                    </div>
+                                }
                             </div>
                             <div className="row">
                                 <div className="small-12 medium-6 columns">
@@ -92,17 +100,23 @@ export default function ProjectPage(){
                     </div>
                 </article>                     
                 {   project.sections.map((section, index) => {
-                        let divider = ''; 
-                        section.thumbs.length === 1 && (divider = 'medium-5 ');
-                        console.log(section.thumbs.length)
+                        let divider = ""; 
+                         divider = section.thumbs ? (section.thumbs.length === 1 ? 'medium-5 ' : '') : ''; 
+                        //console.log(section.video.length); 
                         
                         return (
                             <div className="row" key={index}>
                                 <div className={`small-12 ${divider} columns`}>
                                     <h2>{section.title}</h2>
                                     <p>{section.subtitle}</p>
-                                </div>                                
-                                {section.thumbs.map((thumb, index) => {
+                                </div> 
+                                {
+                                    section.video && <div className={`small-12  columns `}>
+                                        <div className="responsive-embed widescreen"> 
+                                    <iframe type="text/html"  width={section.video.width} height={section.video.height} src={section.video.src} title={section.video.title}    allowFullScreen={true}></iframe>
+                                    </div></div>
+                                }                               
+                                {section.thumbs && section.thumbs.map((thumb, index) => {
                                     return (
                                         <div className={`small-12 medium-${thumb.size} end columns`} key={index}>   
                                             <img src={thumb.src} alt={thumb.alt} />
@@ -131,7 +145,7 @@ export default function ProjectPage(){
                                 <h3>{nextProject.info.shortDescription}</h3>
                             </div>                            
                         </div>
-                        <div className="small-12 large-9 columns">
+                        <div className="small-12 large-8 columns">
                             <img className="imagem-destaque" src={nextProject.info.mainImage} alt={nextProject.client.name} />
                         </div>
                     </div>

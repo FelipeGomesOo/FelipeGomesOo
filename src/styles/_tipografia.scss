@@ -139,4 +139,7 @@ img {
     rgba(0, 196, 216, 1) 75%
   );
 }
+.inline_link + .inline_link {
+  margin-left: 0.5rem;
+}
 

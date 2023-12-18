@@ -95,6 +95,109 @@ const projectsData = [
                 ]
             }
         ]
+    },
+    {  
+        name: 'jamming',
+        visible: true,
+        client: {
+            name: 'Jamming',
+            site: 'http://www.felipe-gomes.com/jamming/',
+            sector: 'Música'
+        },
+        info: {
+            tagline: 'Web app',
+            shortDescription: 'Um aplicativo React para gerir playlists de músicas do Spotify',
+            description: 'O jamming permite ao usuário pesquisar na biblioteca do Spotify, criar uma playlist personalizada e salvá-la em sua conta do Spotify. Inicialmente foi desenvolvido para fins de estudo e prática no curso Front-End Engineer da Codecademy, no entanto, foram implementadas funcionalidades que não estavam listadas no projeto.',
+            services:['UI Design','Front-end'],
+            tools: ['React', 'HTML', 'SASS', 'Javascript'], 
+            thumb: imgs.thumb_jamming,
+            mainImage: imgs.main_jamming,
+            live: 'http://www.felipe-gomes.com/jamming/',
+            githubRepo: 'https://github.com/FelipeGomesOo/react-jamming'
+        },
+        sections: [
+            /* {
+                video: {
+                    width: '560',
+                    height: '315',
+                    src: 'https://www.youtube.com/embed/9NTWdvuK-Rw?si=II-6Icg7mmOaFbfp',
+                    title: 'Jamming - Web app'
+                }   
+            }, */
+            {
+                title: 'Fluxo de dados',                
+                thumbs: 
+                [
+                    {
+                        src: imgs.gallery_jamming_flow_pt_hor, 
+                        size: 12
+                    },
+                      
+                ]
+            },
+            {
+                title: 'Telas',                
+                thumbs: 
+                [
+                    
+                    {
+                        src: imgs.gallery_jamming_01, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_02, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_03, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_04, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_05, 
+                        size: 12
+                    },
+                      
+                ]
+            }
+            
+        ]
+    },
+    {  
+        name: 'findMyHat',
+        visible: false,
+        client: {
+            name: 'Find my Hat',
+            site: 'http://www.felipe-gomes.com/findMyHat/',
+            sector: 'Video Game'
+        },
+        info: {
+            tagline: 'Video Game',
+            shortDescription: 'Um jogo no estilo 16 bits criado com React',
+            description: '"Find My Hat" é um jogo onde o objetivo é localizar um chapéu sem cair em armadilhas. O cenário é gerado automaticamente e aleatoriamente a cada início, proporcionando uma experiência única a cada jogada. Inicialmente concebido como parte de um estudo de javascript e node.js do curso Front-End Developer da Codecademy, o projeto evoluiu e foi implementado em React de modo que pudesse ser jogado diretamente no navegador.',
+            services:['UI Design','Front-end'],
+            tools: ['React', 'HTML', 'SASS', 'Javascript'], 
+            thumb: imgs.thumb_findMyHat,
+            mainImage: imgs.main_findMyHat,
+            live: 'http://www.felipe-gomes.com/findMyHat/',
+            githubRepo: 'https://github.com/FelipeGomesOo/find-my-hat'        
+        },
+        sections: [
+            {
+                title: 'Uma visão geral do jogo',
+                subtitle: 'Neste vídeo você vai saber um pouco mais sobre como o jogo funciona e como foi construído.',
+                video: {
+                         
+                    width: '560',
+                    height: '315',
+                    src: 'https://www.youtube.com/embed/9NTWdvuK-Rw?si=II-6Icg7mmOaFbfp',
+                    title: 'Find My Hat'
+                }   
+            },
+        ]
     }, 
     {  
         name: 'ficou-pequeno',
@@ -117,7 +220,8 @@ const projectsData = [
                 name: 'Alexandre Fischer',
                 company: 'Pé de Sonhos',
                 url: 'https://www.pedesonhos.com.br' 
-            }
+            },
+            live: 'http://www.ficoupequeno.com/',
         },
         sections: [
             {
@@ -301,7 +405,8 @@ const projectsData = [
                 name: 'Alexandre Fischer',
                 company: 'Pé de Sonhos',
                 url: 'https://www.pedesonhos.com.br' 
-            }
+            },
+            live: 'http://ororestaurante.com.br/'
         },
         sections: [
             {
@@ -465,7 +570,8 @@ const projectsData = [
             services:['Conteúdo','UI Design','Front-end'],
             tools: ['Photoshop', 'HTML', 'CSS', 'Javascript', 'PHP'], 
             thumb: imgs.thumb_simacontabil,
-            mainImage: imgs.main_simacontabil,        
+            mainImage: imgs.main_simacontabil,
+            live: 'https://www.simacontabil.com.br/',        
         },
         sections: [
             {

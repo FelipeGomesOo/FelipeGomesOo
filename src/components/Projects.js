@@ -13,7 +13,7 @@ export default function Projects() {
             projectsData.map((proj, index) => {              
               return ( 
                 proj.visible &&        
-                <div key={index} className="small-12 medium-6 large-4 columns">
+                <div key={index} className="small-12 medium-6 large-4 columns end">
                   <Link className="block" to={`/projects/${proj.name}`}>
                     <img src={proj.info.thumb} alt={proj.client.name} />
                     <div className="overlay">

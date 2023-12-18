@@ -97,6 +97,76 @@ const projectsData = [
         ]
     }, 
     {  
+        name: 'jamming',
+        visible: true,
+        client: {
+            name: 'Jamming',
+            site: 'http://www.felipe-gomes.com/jamming/',
+            sector: 'Music'
+        },
+        info: {
+            tagline: 'Web app',
+            shortDescription: 'A React app to manage Spotify music playlists.',
+            description: 'Jamming allows users to search the Spotify library, create a personalized playlist, and save it to their Spotify account. Originally developed for study and practice in the Codecademy Front-End Engineer course, additional functionalities were implemented beyond the project specifications.',
+            services:['UI Design','Front-end'],
+            tools: ['React', 'HTML', 'SASS', 'Javascript'], 
+            thumb: imgs.thumb_jamming,
+            mainImage: imgs.main_jamming,
+            live: 'http://www.felipe-gomes.com/jamming/',
+            githubRepo: 'https://github.com/FelipeGomesOo/react-jamming'
+        },
+        sections: [
+            /* {
+                video: {
+                    width: '560',
+                    height: '315',
+                    src: 'https://www.youtube.com/embed/9NTWdvuK-Rw?si=II-6Icg7mmOaFbfp',
+                    title: 'Jamming - Web app'
+                }   
+            }, */
+            {
+                title: 'Data flow',                
+                thumbs: 
+                [
+                    {
+                        src: imgs.gallery_jamming_flow_en_hor, 
+                        size: 12
+                    },
+                      
+                ]
+            },
+            {
+                title: 'Screens',                
+                thumbs: 
+                [
+                    
+                    {
+                        src: imgs.gallery_jamming_01, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_02, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_03, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_04, 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_jamming_05, 
+                        size: 12
+                    },
+                      
+                ]
+            }
+            
+        ]
+    },
+    {  
         name: 'ficou-pequeno',
         visible: true, 
         client: {
