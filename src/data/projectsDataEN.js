@@ -167,6 +167,60 @@ const projectsData = [
         ]
     },
     {  
+        name: 'findMyHat',
+        visible: true,
+        client: {
+            name: 'Find my Hat',
+            site: 'http://www.felipe-gomes.com/findMyHat/',
+            sector: 'Video Game'
+        },
+        info: {
+            tagline: 'Video Game',
+            shortDescription: 'A 16-bit style game created with React.',
+            description: '"Find My Hat" is a game where the objective is to locate a hat without falling into traps. The scenario is generated automatically and randomly at each start, providing a unique experience with every playthrough. Originally conceived as part of a JavaScript and Node.js study in the Codecademy Front-End Developer course, the project evolved and was implemented in React so that it could be played directly in the browser.',
+            services:['UI Design','Front-end'],
+            tools: ['React', 'HTML', 'SASS', 'Javascript'], 
+            thumb: imgs.thumb_findMyHat,
+            mainImage: imgs.main_findMyHat,
+            live: 'http://www.felipe-gomes.com/findMyHat/',
+            githubRepo: 'https://github.com/FelipeGomesOo/find-my-hat'        
+        },
+        sections: [
+            /* {
+                title: 'Uma visão geral do jogo',
+                subtitle: 'Neste vídeo você vai saber um pouco mais sobre como o jogo funciona e como foi construído.',
+                video: {
+                         
+                    width: '560',
+                    height: '315',
+                    src: 'https://www.youtube.com/embed/9NTWdvuK-Rw?si=II-6Icg7mmOaFbfp',
+                    title: 'Find My Hat'
+                }   
+            }, */
+            {
+                title: 'Screens',                
+                thumbs: 
+                [
+                    {
+                        src: imgs.gallery_findMyHat_01,
+                        alt: "Game overview", 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_findMyHat_02,
+                        alt: "The scenario is generated automatically and randomly at each game start.", 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_findMyHat_03,
+                        alt: "Occasionally, the scenario may create an impossible path to reach the hat. This is something I am working on.", 
+                        size: 12
+                    } 
+                ]
+            }
+        ]
+    },
+    {  
         name: 'ficou-pequeno',
         visible: true, 
         client: {

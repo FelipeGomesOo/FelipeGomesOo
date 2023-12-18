@@ -168,7 +168,7 @@ const projectsData = [
     },
     {  
         name: 'findMyHat',
-        visible: false,
+        visible: true,
         client: {
             name: 'Find my Hat',
             site: 'http://www.felipe-gomes.com/findMyHat/',
@@ -186,7 +186,7 @@ const projectsData = [
             githubRepo: 'https://github.com/FelipeGomesOo/find-my-hat'        
         },
         sections: [
-            {
+            /* {
                 title: 'Uma visão geral do jogo',
                 subtitle: 'Neste vídeo você vai saber um pouco mais sobre como o jogo funciona e como foi construído.',
                 video: {
@@ -196,7 +196,28 @@ const projectsData = [
                     src: 'https://www.youtube.com/embed/9NTWdvuK-Rw?si=II-6Icg7mmOaFbfp',
                     title: 'Find My Hat'
                 }   
-            },
+            }, */
+            {
+                title: 'Telas',                
+                thumbs: 
+                [
+                    {
+                        src: imgs.gallery_findMyHat_01,
+                        alt: "Visão geral do jogo", 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_findMyHat_02,
+                        alt: "O cenário é gerado automaticamente e aleatoriamente a cada início de jogo", 
+                        size: 12
+                    },
+                    {
+                        src: imgs.gallery_findMyHat_03,
+                        alt: "Ocasionalmente o cenário pode criar um desenho impossível de chegar ao chapéu. Isso é algo que estou trabalhando.", 
+                        size: 12
+                    } 
+                ]
+            }
         ]
     }, 
     {  

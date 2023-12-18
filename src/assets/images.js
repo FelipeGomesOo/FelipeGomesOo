@@ -33,6 +33,9 @@ import gallery_jamming_05 from './project-galleries/jamming/05.jpg';
 
 // Find my Hat
 import main_findMyHat  from './project-main-img/find-my-hat.jpg';
+import gallery_findMyHat_01 from './project-galleries/find-my-hat/01.gif';
+import gallery_findMyHat_02 from './project-galleries/find-my-hat/02.gif';
+import gallery_findMyHat_03 from './project-galleries/find-my-hat/03.jpg';
 
 // primavera_dos_paes
 import main_primavera_dos_paes  from './project-main-img/primavera_dos_paes.jpg';
@@ -179,6 +182,9 @@ const images = {
 
     main_findMyHat,
     thumb_findMyHat,
+    gallery_findMyHat_01,
+    gallery_findMyHat_02,
+    gallery_findMyHat_03,
 
     thumb_primavera_dos_paes,
     main_primavera_dos_paes,
